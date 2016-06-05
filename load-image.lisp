@@ -72,7 +72,7 @@
 		:components :bgra
 		:type :uint8
 		:normalise t
-		:sizes '(8 8 8 8)
+		:sizes nil
 		:reversed nil
 		:comp-length 4))
 
@@ -94,7 +94,7 @@
 		:components :bgra
 		:type :uint8
 		:normalise t
-		:sizes '(8 8 8 8)
+		:sizes nil
 		:reversed nil
 		:comp-length 4))
 
@@ -123,7 +123,7 @@
 	      :components :rgb
 	      :type :uint8
 	      :normalise t
-	      :sizes 'nil
+	      :sizes nil
 	      :reversed nil
 	      :comp-length 3))
     (:rgba4444 (cepl.types::make-pixel-format
@@ -144,7 +144,7 @@
 		:components :rgba
 		:type :uint8
 		:normalise t
-		:sizes '(8 8 8 8)
+		:sizes nil
 		:reversed nil
 		:comp-length 4))
 
@@ -167,7 +167,7 @@
 		:components :rgba
 		:type :uint8
 		:normalise t
-		:sizes '(8 8 8 8)
+		:sizes nil
 		:reversed t
 		:comp-length 4))))
 
