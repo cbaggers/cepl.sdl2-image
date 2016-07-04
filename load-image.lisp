@@ -36,42 +36,42 @@
     (:bgr24 (cepl.types::make-pixel-format
 	     :components :bgr
 	     :type :uint8
-	     :normalise t
+	     :normalize t
 	     :sizes nil
 	     :reversed nil
 	     :comp-length 3))
     (:bgr565 (cepl.types::make-pixel-format
 	      :components :bgr
 	      :type :ushort
-	      :normalise t
+	      :normalize t
 	      :sizes '(5 6 5)
 	      :reversed nil
 	      :comp-length 3))
     (:bgr888 (cepl.types::make-pixel-format
 		:components :bgr
 		:type :uint8
-		:normalise t
+		:normalize t
 		:sizes nil
 		:reversed nil
 		:comp-length 3))
     (:bgra4444 (cepl.types::make-pixel-format
 		:components :bgra
 		:type :ushort
-		:normalise t
+		:normalize t
 		:sizes '(4 4 4 4)
 		:reversed nil
 		:comp-length 4))
     (:bgra5551 (cepl.types::make-pixel-format
 		:components :bgra
 		:type :ushort
-		:normalise t
+		:normalize t
 		:sizes '(5 5 5 1)
 		:reversed nil
 		:comp-length 4))
     (:bgra8888 (cepl.types::make-pixel-format
 		:components :bgra
 		:type :uint8
-		:normalise t
+		:normalize t
 		:sizes nil
 		:reversed nil
 		:comp-length 4))
@@ -79,21 +79,21 @@
     (:argb1555 (cepl.types::make-pixel-format
 		:components :bgra
 		:type :ushort
-		:normalise t
+		:normalize t
 		:sizes '(5 5 5 1)
 		:reversed t
 		:comp-length 4))
     (:argb4444 (cepl.types::make-pixel-format
 		:components :bgra
 		:type :ushort
-		:normalise t
+		:normalize t
 		:sizes '(4 4 4 4)
 		:reversed t
 		:comp-length 4))
     (:argb8888 (cepl.types::make-pixel-format
 		:components :bgra
 		:type :uint8
-		:normalise t
+		:normalize t
 		:sizes nil
 		:reversed nil
 		:comp-length 4))
@@ -101,49 +101,49 @@
     (:rgb24 (cepl.types::make-pixel-format
 	     :components :rgb
 	     :type :uint8
-	     :normalise t
+	     :normalize t
 	     :sizes nil
 	     :reversed nil
 	     :comp-length 3))
     (:rgb332 (cepl.types::make-pixel-format
 	      :components :rgb
 	      :type :uint8
-	      :normalise t
+	      :normalize t
 	      :sizes '(3 3 2)
 	      :reversed nil
 	      :comp-length 3))
     (:rgb565 (cepl.types::make-pixel-format
 	      :components :rgb
 	      :type :ushort
-	      :normalise t
+	      :normalize t
 	      :sizes '(5 6 5)
 	      :reversed nil
 	      :comp-length 3))
     (:rgb888 (cepl.types::make-pixel-format
 	      :components :rgb
 	      :type :uint8
-	      :normalise t
+	      :normalize t
 	      :sizes nil
 	      :reversed nil
 	      :comp-length 3))
     (:rgba4444 (cepl.types::make-pixel-format
 		:components :rgba
 		:type :ushort
-		:normalise t
+		:normalize t
 		:sizes '(4 4 4 4)
 		:reversed nil
 		:comp-length 4))
     (:rgba5551 (cepl.types::make-pixel-format
 		:components :rgba
 		:type :ushort
-		:normalise t
+		:normalize t
 		:sizes '(5 5 5 1)
 		:reversed nil
 		:comp-length 4))
     (:rgba8888 (cepl.types::make-pixel-format
 		:components :rgba
 		:type :uint8
-		:normalise t
+		:normalize t
 		:sizes nil
 		:reversed nil
 		:comp-length 4))
@@ -152,21 +152,21 @@
     (:abgr1555 (cepl.types::make-pixel-format
 		:components :rgba
 		:type :ushort
-		:normalise t
+		:normalize t
 		:sizes '(5 5 5 1)
 		:reversed t
 		:comp-length 4))
     (:abgr4444 (cepl.types::make-pixel-format
 		:components :rgba
 		:type :ushort
-		:normalise t
+		:normalize t
 		:sizes '(4 4 4 4)
 		:reversed t
 		:comp-length 4))
     (:abgr8888 (cepl.types::make-pixel-format
 		:components :rgba
 		:type :uint8
-		:normalise t
+		:normalize t
 		:sizes nil
 		:reversed t
 		:comp-length 4))))
