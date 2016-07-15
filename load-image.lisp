@@ -16,7 +16,8 @@
 	   (make-c-array-from-pointer (list width height) element-type data-ptr))
       (sdl2:free-surface surface))))
 
-(defun load-image-to-texture (filename &optional (image-format :rgba8))
+(defun load-image-to-texture (filename &optional (image-format :rgba8) mipmap
+					 generate-mipmaps)
   (let ((surface (sdl2-image:load-image filename)))
     (unwind-protect
 	 (let* ((sdl-format (sdl2:surface-format-format surface))
@@ -28,7 +29,8 @@
 	   (let ((arr (make-c-array-from-pointer
 		       (list width height) element-type ptr)))
 	     (make-texture arr :element-type image-format
-			   :pixel-format pixel-format)))
+			   :pixel-format pixel-format :mipmap mipmap
+			   :generate-mipmaps generate-mipmaps)))
       (sdl2:free-surface surface))))
 
 (defun sdl2-surface-format->pixel-format (surface-format)
